@@ -32,8 +32,6 @@ def check_geometry_matches(
     """
     Check 2: does the exported geometry match the original part's bounding box?
 
-    original_bounds / exported_bounds are dicts like:
-        {"x": 10.0, "y": 20.0, "z": 5.0}
     """
     for axis in ("x", "y", "z"):
         if axis not in original_bounds or axis not in exported_bounds:
